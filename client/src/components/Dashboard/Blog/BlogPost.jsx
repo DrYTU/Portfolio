@@ -41,7 +41,7 @@ function BlogPost() {
 
     const token = localStorage.getItem('token');
 
-    fetch('http://localhost:5000/api/blogs/add-blog', {
+    fetch(process.env.REACT_APP_SERVER_URL + '/api/blogs/add-blog', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

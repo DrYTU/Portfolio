@@ -14,7 +14,7 @@ function TheBlog() {
     const token = localStorage.getItem('token');
 
     // Blog verilerini getir
-    fetch('http://localhost:5000/api/blogs/get-all', {
+    fetch(process.env.REACT_APP_SERVER_URL + '/api/blogs/get-all', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

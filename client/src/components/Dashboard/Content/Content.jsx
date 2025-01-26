@@ -27,7 +27,7 @@ function Content() {
 
     const token = localStorage.getItem('token');
 
-    fetch('http://localhost:5000/api/contents/get-all', {
+    fetch(process.env.REACT_APP_SERVER_URL + '/api/contents/get-all', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function Content() {
 
     const token = localStorage.getItem('token');
 
-    fetch('http://localhost:5000/api/contents/add-content', {
+    fetch(process.env.REACT_APP_SERVER_URL + '/api/contents/add-content', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

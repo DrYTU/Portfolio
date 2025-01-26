@@ -21,7 +21,7 @@ function About() {
 
     const token = localStorage.getItem('token');
 
-    fetch('http://localhost:5000/api/contents/get-all', {
+    fetch(process.env.REACT_APP_SERVER_URL + '/api/contents/get-all', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

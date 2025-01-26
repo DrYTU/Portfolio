@@ -12,7 +12,7 @@ const useAuthCheck = () => {
     } else {
 
       const checkToken = async () => {
-        const response = await fetch('http://localhost:5000/api/auth/check-token', {
+        const response = await fetch(process.env.REACT_APP_SERVER_URL + '/api/auth/check-token', {
           method: 'GET',
           headers: {
             'x-auth-token': token,

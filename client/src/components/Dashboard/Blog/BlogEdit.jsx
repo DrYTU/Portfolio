@@ -43,7 +43,7 @@ function BlogEdit() {
         const token = localStorage.getItem('token');
 
         // Blog verilerini getir
-        fetch('http://localhost:5000/api/blogs/get-all', {
+        fetch(process.env.REACT_APP_SERVER_URL + '/api/blogs/get-all', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ function BlogEdit() {
 
         const token = localStorage.getItem('token');
 
-        fetch('http://localhost:5000/api/blogs/update-blog', {
+        fetch(process.env.REACT_APP_SERVER_URL + '/api/blogs/update-blog', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
