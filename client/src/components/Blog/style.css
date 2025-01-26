@@ -1,0 +1,95 @@
+.navbar {
+    padding: 8px 27px !important;
+}
+a{
+    text-decoration: none;
+}
+
+.blog-content{
+    text-indent:30px;
+    text-align: left;
+    letter-spacing: 0.1px;
+}
+
+.blog-container{
+    padding: 0px calc(5vw - 30px);
+    word-spacing:1px;
+}
+
+.theblog-image{
+    max-width: 1000px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+    color: #fff;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 1);
+    transition: all 0.5s ease;
+    max-height: 360px;
+}
+
+.small-card {
+
+    height: 180px !important;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card-image img {
+    width: 100%;
+    object-fit: cover;
+    height: calc(120px + 2vw);
+   
+}
+
+.small-card-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 75px;
+}
+
+.card-footer{
+    height: 40px;
+}
+
+.small-card-footer{
+    font-size: 14px;
+    height: 35px !important;
+}
+
+.card-image {
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    height: calc(150px + 1vw);
+    overflow: hidden;
+}
+
+.card-content h2 {
+    font-size: 1.3rem; 
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.small-card-content {
+    padding: 15px;
+    height: auto;
+    overflow: hidden;
+}
+
+.small-card-content h2 {
+    font-size: 1rem;
+    padding: 0 !important;
+    margin: 0 !important;
+}
