@@ -1,0 +1,5 @@
+Lines to recomment after blog department built
+
+App.js- Blog navigations inside th return
+
+Main Page is not responsive aestheticly
