@@ -1,1 +1,1 @@
-neciparda.com
+https://neciparda.com
